@@ -1,0 +1,6 @@
+---
+# vars file for loadbalancer
+#ip1="13.233.132.71"  #"{{ be_ip1 }}"
+#ip2="15.206.82.164" #"{{ be_ip2 }}"
+port: "{{ be_port }}"
+expose_port: "{{ fe_port }}"

@@ -1,0 +1,20 @@
+---
+- hosts: lb
+ 
+  vars_prompt:
+          - name: fe_port
+            prompt: "Enter the Frontend for to expose public: "
+            private: no
+            
+          - name: be_port
+            prompt: "Enter the Backend port to assign private web servers: "
+            private: no
+
+  roles:
+          - loadbalancer
+
+
+- hosts: web
+ 
+  roles:
+          - config_webserver
