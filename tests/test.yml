@@ -17,4 +17,5 @@
 - hosts: web
  
   roles:
+          #ansible-galaxy install sheikhaafaq.configure_webserver
           - config_webserver
